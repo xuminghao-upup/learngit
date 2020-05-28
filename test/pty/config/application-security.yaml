@@ -1,0 +1,43 @@
+pty:
+  security:
+    checkCaptcha: false
+    checkDefultPwd: true
+    checkToken: true
+    # 更新token间隔时间（单位：秒），当token有效剩余时间小于这个配置时，创建新的token返回
+    intervalToken: 7200
+    tokenSecret: false
+    jwt:
+      # unit second
+      ttl: 1800
+    queryIP:
+      #调用IP地址查询API请求地址
+      url: http://ip.taobao.com/service/getIpInfo.php?ip=
+      #调用IP地址查询API超时时间
+      timeOut: 1500
+    menu:
+      #菜单列表查询排除功能
+      exclude: 00,01,02,11
+    function:
+      #功能列表查询排除功能
+      exclude: 00,01,02,11
+    ca:
+      vender: BJCA
+      #是否开启ca证书登陆认证
+      open: false
+      webappName: SecXV3Default
+      bjcaRoot: C:/BJCAROOT
+    api:
+      ignores: 
+        - /gal/nm/fam/ehcache/excel/saveParams
+        - /gal/nm/fam/export/{id}
+        - /bip/schePlan/collectExcelExport/{id}
+        - /pa/transfer/{token}
+        - /gal/acareco/ehcache/excel/saveParams
+        - /gal/acareco/export/{id}
+        - /fr/export/report/txt/{id}
+        - /fr/export/saveParams
+        - /mad/plateNumber/excel/**
+        - /ast/card/downloadCardTemplate
+        
+      
+    

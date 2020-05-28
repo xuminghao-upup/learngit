@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    pty:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://127.0.0.1:3308/pitaya?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=CTT&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+      username: root
+      password: 2sPZIPNjwPyEOB4i/X/iMQ==
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      maximumPoolSize: 10
+      connectionTestQuery: select 1 from dual
+    boss:
+      driverClassName: com.mysql.cj.jdbc.Driver
+      jdbcUrl: jdbc:mysql://127.0.0.1:3308/boss?tinyInt1isBit=false&useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&serverTimezone=CTT&zeroDateTimeBehavior=convertToNull&useSSL=false&allowMultiQueries=true
+      username: root
+      password: 2sPZIPNjwPyEOB4i/X/iMQ==
+      connectionTimeout: 30000
+      idleTimeout: 600000
+      maxLifetime: 1800000
+      maximumPoolSize: 10
+      connectionTestQuery: select 1 from dual
+  mybatis:
+    config: ${user.dir}/config/mybatis.xml

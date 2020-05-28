@@ -1,0 +1,6 @@
+spring:
+  cache:
+    type: ehcache
+    expiretime: 7200
+    ehcache:
+      config: ${user.dir}/config/ehcache.xml

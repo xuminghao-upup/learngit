@@ -1,0 +1,8 @@
+debug: false
+spring: 
+  batch: 
+    job:
+      enabled: false
+    initializer:
+      enabled: false
+    

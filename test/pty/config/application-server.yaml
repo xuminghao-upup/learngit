@@ -1,0 +1,23 @@
+server:
+ port: 18080
+ context-path: /pty
+ #连接超时事件，单位毫秒
+ connection-timeout: 60000
+ #http请求头最大字节数， 单位byte
+ max-http-header-size: 1048576
+ #http请求post最大字节数，单位byte
+ max-http-post-size: 1048576000
+ tomcat:
+  #tomcat最大线程数
+  max-threads: 50
+    
+spring:
+ mvc:
+    view:
+      suffix: .html
+ jackson:
+  time-zone: GMT+8
+ thymeleaf:
+  prefix: classpath:/static/html/
+ resources:
+  static-locations: classpath:/static/html/

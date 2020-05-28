@@ -1,0 +1,10 @@
+spring:
+  artemis:
+    connectionUrl: vm://0?retryInterval=2000&reconnectAttempts=-1
+    enabled: false
+    embedded:
+      enabled: true
+      configUrl: ${user.dir}/config/artemis.xml
+  message:
+    sender:
+      serializeType: json

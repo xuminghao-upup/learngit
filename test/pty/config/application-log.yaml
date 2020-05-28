@@ -1,0 +1,5 @@
+# 日志配置
+logging:
+  config: ${user.dir}/config/logback.xml
+  logback:
+    dir: ${user.dir}/logs

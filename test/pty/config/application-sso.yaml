@@ -1,0 +1,5 @@
+pty:
+  sso:
+    type: system
+    ssoUri: 
+    transferUri: 

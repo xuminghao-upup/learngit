@@ -1,0 +1,15 @@
+pty:
+  store:
+    type: local
+  pub: 
+    upload:
+      basedir: ${user.dir}/store/upload
+    temp:
+      basedir: ${user.dir}/store/temp
+    ptyoffice: http://127.0.0.1:8081
+  mix:
+    article:
+      baseDir: ${user.dir}/store/article
+mongodb:
+  uri: mongodb://127.0.0.1:27017,127.0.0.1:27018
+  dbName: pty
